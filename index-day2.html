@@ -18,28 +18,19 @@
   <body>
     <div id="app">Eyo</div>
     <script type="text/babel">
-      const name = "Tyler";
-      const handle = "@tylermcginnis";
-
-      function NameComponent(props) {
-        return <h1>{props.name} </h1>;
-      }
-
-      function HandleComponent(props) {
-        return <h3>{props.handle}</h3>;
-      }
-
-      function App() {
+      function App () {
         return (
-          <div id="container">
-            <NameComponent name={name} />
-            <HandleComponent handle={handle} />
-          </div>
-        );
+            <div>
+            Hello World
+            </div>
+        )
       }
 
-      console.log("wrapperElement", wrapperElement);
-      ReactDOM.render(wrapperElement, document.getElementById("app"));
+      ReactDom.render(
+        <App />,
+        document.getElementById('app')
+      )
     </script>
   </body>
 </html>
+
