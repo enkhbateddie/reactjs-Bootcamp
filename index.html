@@ -18,8 +18,9 @@
   <body>
     <div id="app">Eyo</div>
     <script type="text/babel">
-      const name = "Tyler";
-      const handle = "@tylermcginnis";
+      function App() {
+        return React.createElement("div", null, "Hello World");
+      }
 
       function NameComponent(props) {
         return <h1>{props.name} </h1>;
